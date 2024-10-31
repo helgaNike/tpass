@@ -1,0 +1,20 @@
+.main-menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 17px;
+    align-items: center;
+}
+
+.main-menu__link {
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 16px 26px;
+    line-height: 1;
+    display: inline-block;
+}
+
+.main-menu__link:hover {
+    color: var(--accent);
+    transition: all 0.3s;
+}

@@ -1,0 +1,64 @@
+:root {
+  --base: #576D81;
+  --dark: #0F2336;
+  --accent: #00CCCC;
+  --accent-second: #f3ae47;
+
+  font-family: Roboto;
+  font-weight: 400;
+  color: var(--base);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-weight: 900;
+  color: var(--dark);
+  line-height: 1.38;
+}
+
+.page-title {
+  font-size: 3.4375rem;
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 2.5rem;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.page {
+  overflow: hidden;
+}
+
+
+
+
+
+/* :root {
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ */

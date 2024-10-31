@@ -1,0 +1,17 @@
+.footer-menu__link {
+    font-size: 0.875rem;
+    color: white;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.footer-menu__link:hover {
+    opacity: 1;
+}
+
+.footer-menu__title {
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 13px;
+}
