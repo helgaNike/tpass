@@ -1,0 +1,28 @@
+.advantages {
+    margin: 100px 0;
+    position: relative;
+    z-index: 0;
+}
+
+.advantages::before {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    bottom: 36px;
+    background-color: var(--bg-light);
+    z-index: -1;
+}
+
+.advantages__item {
+    padding-left: 20px;
+}
+
+.advantages__item:nth-child(even) {
+    padding-left: 60px;
+}
+
+.advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+}

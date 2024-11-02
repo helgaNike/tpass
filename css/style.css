@@ -9,8 +9,10 @@
  @import './logo';
  @import './main-menu';
  @import './get-app-form';
+ @import './advantage-card';
  
  @import './header';
  @import './hero';
+ @import './advantages';
  @import './get-app';
  @import './footer';

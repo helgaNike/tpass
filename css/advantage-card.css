@@ -1,0 +1,32 @@
+.advantage-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 10px 23px;
+    max-width: 455px;
+    align-items: center;
+    box-shadow: 0 8px 32px rgba(15, 35, 54, 0.06);
+}
+
+.advantage-card__description {
+    grid-column: 2/3;
+}
+
+.advantage-card__title {
+    font-size: 1.5625rem;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.advantage-card__ico {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #F6F7F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
