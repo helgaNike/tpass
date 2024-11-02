@@ -4,9 +4,13 @@
 
 
  @import './btn';
+ @import './text-input';
  @import './footer-menu';
- @import './header';
- @import './footer';
  @import './logo';
  @import './main-menu';
+ @import './get-app-form';
+ 
+ @import './header';
  @import './hero';
+ @import './get-app';
+ @import './footer';

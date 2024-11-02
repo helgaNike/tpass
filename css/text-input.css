@@ -1,0 +1,11 @@
+.text-input {
+    background-color: #F0F0F2;
+    border: none;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.35;
+    font-family: inherit;
+    padding: 16px;
+    border-radius: 6px;
+}
