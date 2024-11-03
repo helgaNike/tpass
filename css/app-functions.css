@@ -1,0 +1,32 @@
+.app-functions {
+    margin-bottom: 100px;
+}
+
+.app-functions__items {
+    text-align: center;
+}
+
+.app-functions__item:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.app-functions__img {
+    margin: 0 auto 30px;
+}
+
+@media (min-width: 700px) {
+    .app-functions__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        text-align: left;
+    }
+
+    .app-functions__img {
+        margin: 0 0 30px;
+    }
+
+    .app-functions__item {
+        margin: 0;
+    }
+}
