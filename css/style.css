@@ -5,6 +5,7 @@
 
  @import './btn';
  @import './text-input';
+ @import './message';
  @import './footer-menu';
  @import './logo';
  @import './main-menu';

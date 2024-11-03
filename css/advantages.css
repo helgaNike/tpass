@@ -26,3 +26,36 @@
 .advantages__item:not(:last-child) {
     margin-bottom: 30px;
 }
+
+.advantages__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.advantages__illustration {
+    padding-bottom: 36px;
+    position: relative;
+}
+
+.advantages__img {
+    margin: 0 auto;
+    display: block;
+}
+
+
+.advantages__free {
+    top: 50%;
+    left: 35px;
+    position: absolute;
+
+}
+.advantages__points {
+    position: absolute;
+    top: 82px;
+    right: 35px;
+}
+.advantages__discount {
+    position: absolute;
+    right: 35px;
+    bottom: 82px;
+}
