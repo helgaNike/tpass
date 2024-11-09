@@ -20,22 +20,25 @@
 .title {
   font-weight: 700;
   color: var(--dark);
-  line-height: 1.38;
-}
-
-.page-title {
-  font-size: 3.4375rem;
-  font-weight: 700;
 }
 
 .section-title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  line-height: 1.2;
 }
 
 .block-title {
   font-size: 1.5625rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.34;
+}
+
+@media (min-width: 700px) {
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }  
 }
 
 

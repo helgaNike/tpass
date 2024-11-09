@@ -1,0 +1,16 @@
+.burger-btn {
+    width: 30px;
+    background: none;
+    border: none;
+}
+
+.burger-btn__line {
+    display: block;
+    height: 4px;
+    background-color: var(--dark);
+    border-radius: 4px;
+}
+
+.burger-btn__line:not(:last-child) {
+    margin-bottom: 4px;
+}

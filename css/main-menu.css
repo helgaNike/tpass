@@ -1,8 +1,5 @@
 .main-menu {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 17px;
-    align-items: center;
+   text-align: center;
 }
 
 .main-menu__link {
@@ -12,9 +9,27 @@
     padding: 16px 26px;
     line-height: 1;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .main-menu__link:hover {
     color: var(--accent);
     transition: all 0.3s;
+}
+
+.main-menu__item:last-child {
+    margin-top: 13px;
+}
+
+@media (min-width: 1024px) {
+    .main-menu {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 17px;
+        align-items: center;
+        text-align: left;
+    }
+    .main-menu__item:last-child {
+        margin: 0;
+    }
 }

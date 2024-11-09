@@ -1,3 +1,8 @@
 .logo, .logo__img {
     display: block;
 }
+
+.logo__img {
+    transition: all 0.3s;
+    width: 130px;
+}

@@ -1,0 +1,27 @@
+.close-btn {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    border: none;
+}
+
+.close-btn::before,
+.close-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    right: -10%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--dark);
+    margin-top: -2px;
+}
+
+.close-btn::before {
+    transform: rotate(45deg);
+}
+
+.close-btn::after {
+    transform: rotate(-45deg);
+}

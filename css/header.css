@@ -1,10 +1,41 @@
 .header {
     background-color: #f5f6f7;
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: all 0.3s;
 }
 
 .header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header.isScrolled {
+    padding: 5px 0;
+    box-shadow: 0 0 10px rgba(15,35,54, 0.1);
+    background-color: white;
+}
+
+.header.isScrolled .logo__img {
+    width: 90px;
+}
+
+.header.isScrolled .btn{
+    line-height: 40px;
+}
+
+.header.isScrolled .main-menu__link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+    .header__nav-btn {
+        display: none;
+    }
 }

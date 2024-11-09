@@ -1,11 +1,10 @@
 .advantage-card {
     background-color: white;
-    padding: 25px;
+    padding: 15px;
     border-radius: 8px;
     display: grid;
-    grid-template-columns: 50px 1fr;
-    gap: 10px 23px;
-    max-width: 455px;
+    grid-template-columns: auto 1fr;
+    gap: 5px 10px;
     align-items: center;
     box-shadow: 0 8px 32px rgba(15, 35, 54, 0.06);
 }
@@ -15,18 +14,46 @@
 }
 
 .advantage-card__title {
-    font-size: 1.5625rem;
+    font-size: 1.3rem;
     line-height: 1;
     font-weight: 700;
     color: var(--dark);
 }
 
 .advantage-card__ico {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 8px;
     background-color: #F6F7F8;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.advantage-card__img {
+    width: 50%;
+    height: auto;
+}
+
+@media (min-width: 800px) {
+    .advantage-card__ico {
+        width: 50px;
+        height: 50px;
+    }
+
+    .advantage-card {
+        padding: 25px;
+        gap: 10px 23px;
+        max-width: 455px;
+    }
+
+    .advantage-card__img {
+        width: auto;
+    }
+
+    .advantage-card__title {
+        font-size: 1.5625rem;
+    }
+
+
 }
