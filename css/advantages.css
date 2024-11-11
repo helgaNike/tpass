@@ -4,17 +4,6 @@
     margin-bottom: 100px;
 }
 
-.advantages::before {
-    content: "";
-    position: absolute;
-    top: 36px;
-    left: 0;
-    right: 0;
-    bottom: 36px;
-    background-color: var(--bg-light);
-    z-index: -1;
-}
-
 .advantages__item:not(:last-child) {
     margin-bottom: 30px;
 }
@@ -51,7 +40,33 @@
     bottom: 82px;
 }
 
+.advantages__illustration {
+    position: relative;
+}
+
+.advantages__illustration::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    right: -100px;
+    bottom: 0;
+    background: center bottom no-repeat url('./img/bg-leafs.svg');
+    background-size: auto 100%;
+    z-index: -1;
+}
+
 @media (min-width: 700px) {
+    .advantages::before {
+        content: "";
+        position: absolute;
+        top: 36px;
+        left: 0;
+        right: 0;
+        bottom: 36px;
+        background-color: var(--bg-light);
+        z-index: -1;
+    }
     .advantages__inner {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -63,6 +78,10 @@
 
     .advantages__illustration {
         padding-bottom: 36px;
+    }
+
+    .advantages__illustration::before {
+        bottom: 36px;
     }
 }
 

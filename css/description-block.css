@@ -1,7 +1,9 @@
 .description-block {
+    background-color: var(--bg-light);
+    margin: 0 -20px;
+    padding: 0 20px 30px;
     position: relative;
     z-index: 0;
-    padding: 20px;
 }
 
 .description-block::before {
@@ -9,16 +11,10 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 50px;
-    bottom: 0;
-    border-radius: 10px;
-    background-color: var(--bg-light);
+    top: 0;
+    height: 40px;
+    background-color: white;
     z-index: -1;
-}
-
-.description-block__title {
-    font-weight: 900;
-    line-height: 1.35;
 }
 
 .description-block__eyebrow {
@@ -26,53 +22,70 @@
     font-size: 1.125rem;
 }
 
-.description-block__content {
-    max-width: 414px;
-    box-sizing: content-box;
+.description-block__title {
+    font-weight: 900;
+    line-height: 1.35;
 }
 
-.description-block__img-wrap {
-    max-width: 400px;
-    margin: 0 auto 30px;
+.description-block__img {
+    margin: 0 auto 50px;
+    max-width: 300px;
 }
 
-.how-work {
-    margin-bottom: 100px;
-}
-
-.send-gifts {
-    margin-bottom: 100px;
-}
-
-@media (min-width: 700px) {
+@media (min-width:600px) {
     .description-block {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        padding: 0;
-    }
-
-    .description-block::before {
-        bottom: 50px;
-    }
-
-    .description-block__img-wrap {
-        padding-left: 38px;
-        max-width: none;
-        margin: 0;
+        grid-template-columns: auto 400px;
+        gap: 20px;
+        padding: 0 20px;
     }
 
     .description-block__content--reverse {
         order: -1;
-        padding-right: 33px;
         justify-self: end;
     }
 
-    .description-block__img-wrap--reverse {
-        padding-right: 38px;
+    .description-block__img-container {
+        position: relative;
     }
-    
-    
-    
 
+    .description-block__img-wrap {
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        top: -40px;
+        width: 500px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .description-block__img {
+        height: 100%;
+        width: auto;
+    }
+
+    .description-block::before {
+        display: none;
+    }
+
+    .description-block__img {
+        margin: 0;
+        max-width: 100%;
+    }
+    .description-block__content {
+        width: 400px;
+        padding: 110px 0;
+    }
+}
+
+@media (min-width:1024px) {
+    .description-block {
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        border-radius: 50px;
+    }
+}
+
+.how-work, .send-gifts {
+    margin-bottom: 100px;
 }

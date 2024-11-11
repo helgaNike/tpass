@@ -1,8 +1,11 @@
 .hero {
-    padding-top: 100px;
     margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
+.hero__inner {
+    padding-top: 100px;
+}
 
 .hero__picture:before {
     content: "";
@@ -13,6 +16,7 @@
     right: -50px;
     z-index: -1;
     background: bottom center no-repeat url(./img/hero-bg.svg) #f5f6f7;
+    background: bottom center no-repeat url(./img/hero-bg.svg);
     background-size: 100% 100%;
 }
 
@@ -27,9 +31,11 @@
 
 .hero__title {
     margin-bottom: 49px;
+    margin-bottom: 20px;
     font-weight: 700;
     line-height: 1.37;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    color: var(--dark);
 }
 
 .hero__description {
@@ -38,9 +44,13 @@
 
 @media (min-width: 800px) {
     .hero {
-        padding-top: 140px;
         background-color: #f5f6f7;
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
+    }
+    .hero__inner {
+        padding-top: 140px;
+        height: 100vh;
+        max-height: 730px;
     }
     .hero__description {
         width: 50%;
