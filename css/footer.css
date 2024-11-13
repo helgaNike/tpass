@@ -64,7 +64,7 @@
         position: absolute;
         top: -25px;
         right: 100%;
-        background: center no-repeat url(./img/leaf-green.svg);
+        background: center no-repeat url(/img/leaf-green.svg);
         background-size: contain;
         transform: rotate(5deg);
     }
@@ -77,7 +77,7 @@
         position: absolute;
         left: 100%;
         bottom: -10%;
-        background: top center no-repeat url(./img/leaf-yellow.svg);
+        background: top center no-repeat url(/img/leaf-yellow.svg);
         background-size: 100% auto;
         margin-left: -5px;
     }

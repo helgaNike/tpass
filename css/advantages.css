@@ -51,7 +51,7 @@
     left: -100px;
     right: -100px;
     bottom: 0;
-    background: center bottom no-repeat url('./img/bg-leafs.svg');
+    background: center bottom no-repeat url('/img/bg-leafs.svg');
     background-size: auto 100%;
     z-index: -1;
 }
