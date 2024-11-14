@@ -37,8 +37,6 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
-      - name: Go to project dir
-        run: cd tpass
       - name: Build
         run: npm run build
       - name: Setup Pages
