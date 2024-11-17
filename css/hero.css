@@ -15,8 +15,7 @@
     left: -90px;
     right: -50px;
     z-index: -1;
-    background: bottom center no-repeat url(./img/hero-bg.svg) #f5f6f7;
-    background: bottom center no-repeat url(./img/hero-bg.svg);
+    background: bottom center no-repeat url(/img/hero-bg.svg);
     background-size: 100% 100%;
 }
 
