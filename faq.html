@@ -2,82 +2,148 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
 </head>
 
 <body>
-  <div class="page">
-    <header class="header">
-      <div class="container header__inner">
-        <a href="/" class="logo">
-          <img class="logo__img" src="./img/logo.svg" alt="Site logo">
-        </a>
-        <button class="burger-btn header__nav-btn">
-          <span class="burger-btn__line"></span>
-          <span class="burger-btn__line"></span>
-          <span class="burger-btn__line"></span>
-        </button>
-        <nav class="header-nav">
-          <button class="close-btn header-nav__close"></button>
-          <ul class="main-menu">
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Stores</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="/faq.html">Help & Support</a></li>
-            <li class="main-menu__item"><a class="btn btn__small" href="#">Download</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-   
+    <div class="page">
+        <header class="header">
+            <div class="container header__inner">
+                <a href="/" class="logo">
+                    <img class="logo__img" src="./img/logo.svg" alt="Site logo">
+                </a>
+                <button class="burger-btn header__nav-btn">
+                    <span class="burger-btn__line"></span>
+                    <span class="burger-btn__line"></span>
+                    <span class="burger-btn__line"></span>
+                </button>
+                <nav class="header-nav">
+                    <button class="close-btn header-nav__close"></button>
+                    <ul class="main-menu">
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Stores</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="./faq.html">Help & Support</a></li>
+                        <li class="main-menu__item"><a class="btn btn__small" href="#">Download</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <footer class="footer">
-      <div class="footer__inner container">
-        <img src="./img/logo-white.svg" alt="Site logo" class="footer__logo" width="130" height="47">
-        <nav class="footer__nav">
-          <div class="footer__menu footer-menu">
-            <div class="footer-menu__title">Company</div>
-            <ul class="footer-menu__items">
-              <li class="footer-menu_item">
-                <a class="footer-menu__link" href="#">Merchant Portal</a>
-              </li>
+        <section class="faq container">
+            <h1 class="faq__title page-title">FAQ</h1>
+            <ul class="faq__items">
+                <li class="faq__item">
+                    <button class="faq__btn"></button>
+                    <h2 class="faq__question">How to use bonuses?</h2>
+                    <p class="faq__answer">Bonuses can be used on future purchases or exchanged for special offers
+                        within the service. Check the bonus usage conditions in your personal account.</p>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn"></button>
+                    <h2 class="faq__question">How to earn bonuses?</h2>
+                    <p class="faq__answer">Bonuses are earned by performing certain actions on the platform, such as
+                        making purchases, registering, or inviting friends.</p>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn"></button>
+                    <h2 class="faq__question">Are there any restrictions on using bonuses?</h2>
+                    <p class="faq__answer">Yes, bonuses have an expiration date. They must be used before the deadline
+                        or according to the terms of the promotions.</p>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn"></button>
+                    <h2 class="faq__question">How to change personal information?</h2>
+                    <p class="faq__answer">Update your details in your profile under the "Settings" section. All changes
+                        are saved automatically.</p>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn"></button>
+                    <h2 class="faq__question">Can bonuses be transferred to other users?</h2>
+                    <p class="faq__answer">No, bonuses are tied to your account and cannot be transferred to other
+                        users.</p>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn"></button>
+                    <h2 class="faq__question">How to delete an account?</h2>
+                    <p class="faq__answer">To delete your account, contact customer support via email or chat on the
+                        platform.</p>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn"></button>
+                    <h2 class="faq__question">What to do if bonuses are not credited?</h2>
+                    <p class="faq__answer">Check if you have fulfilled all the conditions for earning bonuses. If the
+                        issue persists, contact support.</p>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn"></button>
+                    <h2 class="faq__question">How to activate a promo code?</h2>
+                    <p class="faq__answer">The promo code is entered during the checkout process. The discount will be
+                        applied automatically.</p>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn"></button>
+                    <h2 class="faq__question">Can multiple promo codes be used?</h2>
+                    <p class="faq__answer">Usually, only one promo code can be used per purchase, but it depends on the
+                        promotion's terms.</p>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn"></button>
+                    <h2 class="faq__question">Is there a mobile app to use the service?</h2>
+                    <p class="faq__answer">Yes, we have a mobile app available for both iOS and Android, allowing you to
+                        conveniently track your bonuses and activities</p>
+                </li>
             </ul>
-          </div>
-          <div class="footer__menu footer-menu">
-            <div class="footer-menu__title">Support</div>
-            <ul class="footer-menu__items">
-              <li class="footer-menu_item">
-                <a class="footer-menu__link" href="/faq.html">FAQ</a>
-              </li>
-              <li class="footer-menu_item">
-                <a class="footer-menu__link" href="#">Terms of Service</a>
-              </li>
-              <li class="footer-menu_item">
-                <a class="footer-menu__link" href="#">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__menu footer-menu">
-            <div class="footer-menu__title">Follow Us</div>
-            <ul class="footer-menu__items">
-              <li class="footer-menu_item">
-                <a class="footer-menu__link" href="#">Twitter</a>
-              </li>
-              <li class="footer-menu_item">
-                <a class="footer-menu__link" href="#">Instagram</a>
-              </li>
-              <li class="footer-menu_item">
-                <a class="footer-menu__link" href="#">Facebook</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </footer>
-  </div>
+        </section>
 
-  <script type="module" src="/main.js"></script>
+
+        <footer class="footer">
+            <div class="footer__inner container">
+                <img src="./img/logo-white.svg" alt="Site logo" class="footer__logo" width="130" height="47">
+                <nav class="footer__nav">
+                    <div class="footer__menu footer-menu">
+                        <div class="footer-menu__title">Company</div>
+                        <ul class="footer-menu__items">
+                            <li class="footer-menu_item">
+                                <a class="footer-menu__link" href="#">Merchant Portal</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu footer-menu">
+                        <div class="footer-menu__title">Support</div>
+                        <ul class="footer-menu__items">
+                            <li class="footer-menu_item">
+                                <a class="footer-menu__link" href="./faq.html">FAQ</a>
+                            </li>
+                            <li class="footer-menu_item">
+                                <a class="footer-menu__link" href="#">Terms of Service</a>
+                            </li>
+                            <li class="footer-menu_item">
+                                <a class="footer-menu__link" href="#">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu footer-menu">
+                        <div class="footer-menu__title">Follow Us</div>
+                        <ul class="footer-menu__items">
+                            <li class="footer-menu_item">
+                                <a class="footer-menu__link" href="#">Twitter</a>
+                            </li>
+                            <li class="footer-menu_item">
+                                <a class="footer-menu__link" href="#">Instagram</a>
+                            </li>
+                            <li class="footer-menu_item">
+                                <a class="footer-menu__link" href="#">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="/main.js"></script>
 </body>
 
 </html>
