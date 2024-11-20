@@ -11,14 +11,21 @@
     justify-content: center;
     border: none;
     font-size: 1.125rem;
+}
+
+.btn:not(:disabled) {
     cursor: pointer;
+}
+
+.btn:disabled {
+    opacity: 0.5;
 }
 
 .btn__ico {
     margin-left: 10px;
 }
 
-.btn:hover {
+.btn:not(:disabled):hover {
     background-color: var(--accent-second);
 }
 

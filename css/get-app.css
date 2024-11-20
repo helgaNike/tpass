@@ -23,6 +23,19 @@
     margin-top: 20px;
 }
 
+.get-app__success-msg {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(15,35,54,0.2);
+    border-radius: 8px;
+    max-width: 395px;
+    margin: 0 auto;
+}
+
+.get-app__success-msg-btn {
+    margin-top: 20px;
+}
+
 @media (min-width: 500px) {
     .get-app__title {
         font-size: 3.125rem;
