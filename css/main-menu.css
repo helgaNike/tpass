@@ -6,10 +6,14 @@
     color: var(--dark);
     font-weight: 700;
     font-size: 0.875rem;
-    padding: 16px 26px;
+    padding: 10px 26px;
     line-height: 1;
     display: inline-block;
     white-space: nowrap;
+}
+
+.main-menu__btn {
+    line-height: 40px;
 }
 
 .main-menu__link:hover {

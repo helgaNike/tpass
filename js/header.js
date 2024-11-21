@@ -1,11 +1,17 @@
-window.addEventListener('scroll', function(){
-    const header = document.querySelector('.header');
-    
-    if(window.scrollY > 0) {
-        header.classList.add('isScrolled');
+const header = document.querySelector('.header--front');
+
+if(header) {
+
+    const handlerScroll = function() {
+        if(window.scrollY > 0) {
+            header.classList.add('isScrolled');
+        }
+        else {
+            header.classList.remove('isScrolled');
+        }
     }
-    else {
-        header.classList.remove('isScrolled');
-    }
-    
-});
+
+    window.addEventListener('scroll', handlerScroll);
+}
+
+

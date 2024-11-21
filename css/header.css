@@ -1,11 +1,13 @@
 .header {
-    padding: 10px 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
     transition: all 0.3s;
+    box-shadow: 0 0 10px rgba(15,35,54, 0.1);
+    background-color: white;
+    padding: 5px 0;
 }
 
 .header__inner {
@@ -14,23 +16,18 @@
     align-items: center;
 }
 
-.header.isScrolled {
-    padding: 5px 0;
-    box-shadow: 0 0 10px rgba(15,35,54, 0.1);
-    background-color: white;
+.header--front:not(.isScrolled) {
+    padding: 10px 0;
+    background: none;
+    box-shadow: none;
 }
 
-.header.isScrolled .logo__img {
-    width: 90px;
+.header--front:not(.isScrolled) .logo__img {
+    width: 130px;
 }
 
-.header.isScrolled .btn{
-    line-height: 40px;
-}
-
-.header.isScrolled .main-menu__link {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.header--front:not(.isScrolled) .btn{
+    line-height: 50px;
 }
 
 @media (min-width: 1024px) {
